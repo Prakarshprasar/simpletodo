@@ -24,3 +24,6 @@ input.chinp{
     width: 30px;
     height: 20px;
 }
+.striked{
+    text-decoration: line-through;
+}

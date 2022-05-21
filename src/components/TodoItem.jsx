@@ -3,17 +3,24 @@ import style from "./todo.module.css"
 
 
 
-const TodoItem = ({arr}) => {
+const TodoItem = ({todo,deleteItem}) => {
+
+  const [isCompleted,setIsCompleted]  = useState(todo.isCompleted)
+  
   
   return (
-    <div className={style.tododiv}>
-        {arr.map((todos)=>(
-            <div className={style.lborder}>
-              <input type="checkbox" className={style.chinp} />
-              <label for="checkbox">{todos.value}</label>
+
+          
+            <div className={style.lborder} key={todo.id}>
+              <input type="checkbox"
+              checked={isCompleted}
+              onChange={(e)=>{
+                setIsCompleted(e.target.checked)
+              }}  className={style.chinp} />
+              <label className={isCompleted ? style.striked :""}>{todo.value}</label>
+              <button onClick={()=> deleteItem(todo.id)}>Delete</button>
             </div> 
-        ))}
-    </div>
+       
   )
 }
 
