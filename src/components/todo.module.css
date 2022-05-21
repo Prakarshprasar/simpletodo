@@ -7,12 +7,7 @@
     font-size: 20px;
     padding: 10px 20px;
 }
-.lborder>span{
-    border: 7px solid teal;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px
-}
+
 .tododiv{
     width: 53%;
     
@@ -24,4 +19,8 @@
     font-size: 20px;
     border-radius: 10px;
     margin-left: 10px;
+}
+input.chinp{
+    width: 30px;
+    height: 20px;
 }
