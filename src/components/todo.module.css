@@ -24,12 +24,29 @@
     font-size: 20px;
     border-radius: 10px;
     margin-left: 10px;
+    cursor: pointer;
 }
-input.chinp{
+.chinp{
     width: 30px;
     height: 20px;
+    border: 2px solid red;
 }
 .striked{
     text-decoration: line-through;
-    color: rgba(128, 128, 128, 0.418);
+    color: rgba(0, 0, 0, 0.651)
+}
+.ctodo{
+    border: 3px solid teal;
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 15px;
+    
+    
+}
+.heading{
+    font-weight: lighter;
+    border-radius: 10px;
+    background-color: orangered;
+    color: white;
+    padding: 10px;
 }

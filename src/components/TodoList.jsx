@@ -1,13 +1,19 @@
+import style from "./todo.module.css"
+import React from 'react'
 
-// import React from 'react'
-// import TodoItem from './TodoItem'
+const TodoList = ({arr}) => {
+  return (
+    <div>
+        <div><h2 className={style.heading}>Show Completed To-Do's</h2></div>
+        {arr.map((elem)=>(
+            <div  className={style.ctodo} >
+                <p className={style.striked}>{elem}</p>
+            </div>
+            
+        ))}
+        
+    </div>
+  )
+}
 
-// const TodoList = ({arr}) => {
-//   return (
-//     <div>
-//         <TodoItem arr={arr}/>
-//     </div>
-//   )
-// }
-
-// export default TodoList
+export default TodoList
